@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% load my_extras }%}  <!-- need to load the py file with the filter we created -->
+{% extends 'basic_app/base.html' %}
+    {% block body_block %}
+    <h1>WELCOME TO INDEX</h1>
+    <h1>{{ text | upper }}</h1> <!-- using the 'upper' filter to capitalise all text. Same as upper() in Python-->
+    <h1>{{ text | cut:'World' }}</h1> <!-- using the 'cut' filter we created, to cut out part of the text-->
+    <h1>{{ number | add:3 }}</h1>
+    {% endblock %}

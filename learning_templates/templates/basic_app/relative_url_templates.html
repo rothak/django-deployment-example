@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>WELCOME TO RELATIVE URL TEMPALTES</h1>
+    <!-- <a href="basic_app/other.html">OTHER PAGE</a> --><!-- we don't want to use hardcoded paths-->
+    <a href="{% url 'basic_app:other' %}">OTHER PAGE</a> <!-- Instead, we use template tagging-->
+    <br>
+    <a href="{% url 'admin:index' %}">ADMIN PAGE</a> <!-- to get to /admin - which is outside our app - we use 'admin:index' -->
+    <br>
+    <a href="{% url 'index' %}">ROOT</a> <!-- to get to index - which is also outside our app - we just use 'index'-->
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+<!-- we don't need any of the usual html code, as it is all being inherited from the base.html-->
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body> -->
+    {% block body_block %} <!-- anything within this block will be specific to this html file-->
+    <h1>WELCOME TO OTHER</h1>
+    <h2>This is an example of template inheritance</h2>
+    {% endblock %}
+<!-- </body>
+</html> -->
